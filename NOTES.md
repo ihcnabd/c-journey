@@ -48,3 +48,26 @@ here i'll write notes, thoughts, and any other information I pick up from *C Pro
     - *preprocessing*: the program is given to a preprocessor (which is usually integrated with the copiler below), which obeys commands that begin with # (knows as directives). a preprocessor is a bit like an editor: it can add/edit things to the program
     - *compiling*: the modified program now goes to a compilter, which translates it into machine instructions (object code). the program isn't quite ready to run yet
     - *linking*: a linker combines the object code produced by the compiler with any additional code needed to yield a complete executable program. this additional code includes library functions (like `printf`) that are used in the program
+- an example of a simple C program template:
+ `directives`
+ `function {`
+    `statement`
+ `}`
+- directives
+    - before a C program is compilted, it is first edited by a preprocessor
+    - commands intended for the preprocessor are called directives 
+    - an example is the `#include` directive
+    - the directive states that the information in `<studio.h>` is to be "included" into the program before it is compiled, `<studio.h>` contains information about C's standard I/O library
+    - C has no built in "read" and "write" commands, that's why we `#include <studio.h>`, so the ability to perform input and output is provided instead by functions in the standard library
+    - directives always begin with # character, one line long, no semicolon or other special marker at the end of it
+- functions:
+    - they're like "procedures" or "subroutines" in other programming languages
+    - the building blocks from which programs are constructed
+    - a C program is a little more than a collection of function
+    - two types of functions: 
+        - those written by the programmer 
+        - and those provded as part of the C implementation
+    - the term "function" comes from mathematics
+    - a function that computes a value uses the `return` statement to specify what value it "returns"
+    - the `main` function is mandatory, it's special, it gets called automatically when the program is executed
+    - if there's no return statement at the end of the main function (e.g. our ch01/pun.c), the program will still terminate, however, many compilers will produce a warning message (because the function was supposed to return an integer but failed to)
