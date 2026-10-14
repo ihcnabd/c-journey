@@ -3,6 +3,7 @@ here i'll write notes, thoughts, and any other information I pick up from *C Pro
 ----------
 
 ### Chapter 01: Introducting C
+
 - a widely used programming language, developed in the early 1970s, at Bell Laboratories
 - C based languages: 
     - C++, adds classes and other features to support object-oriented programming
@@ -18,12 +19,12 @@ here i'll write notes, thoughts, and any other information I pick up from *C Pro
 - C is a small language
 - C is a permissive language, which means that C trusts you and doesn’t stop you from doing risky or wrong things
 - strenghts of C: 
-    - efficiency, because C was intended for applications where assembly language had traditionally been used, it was crucial that C programs could run quickly and in limited amounts of memory
-    - portability
-    - power, C's large collection of data types and operators help make it a powerful language 
-    - flexibility, although C was originally designed for systems programming, now it's used everywhere
-    - standar library, which contains hundreds of functions for input/output, string handling, storage allocation, and other useful operations
-    - integration with UNIX
+    - *efficiency*, because C was intended for applications where assembly language had traditionally been used, it was crucial that C programs could run quickly and in limited amounts of memory
+    - *portability*
+    - *power*, C's large collection of data types and operators help make it a powerful language 
+    - *flexibility*, although C was originally designed for systems programming, now it's used everywhere
+    - *standard library*, which contains hundreds of functions for input/output, string handling, storage allocation, and other useful operations
+    - *integration with UNIX*
 - weaknesses of C: 
     - C programs can be error-prone, C is a lot like assembly language, wher emost errors aren't detected until the program is run
     - C programs can be difficult to understand
@@ -38,4 +39,12 @@ here i'll write notes, thoughts, and any other information I pick up from *C Pro
     - adopt a sensible set of coding conentions, which's a style rule that a programmer has decided to adpt even though it's not enforced by the language
     - avoid "tricks" and overly complex code
     - stick to the standard
-    
+
+----------
+
+### Chapter 02: C Fundamentals
+
+- let's say we got ch01/pun.c, we've got to convert the progam to a form that the machine can execute, in C it's usually three steps:
+    - *preprocessing*: the program is given to a preprocessor (which is usually integrated with the copiler below), which obeys commands that begin with # (knows as directives). a preprocessor is a bit like an editor: it can add/edit things to the program
+    - *compiling*: the modified program now goes to a compilter, which translates it into machine instructions (object code). the program isn't quite ready to run yet
+    - *linking*: a linker combines the object code produced by the compiler with any additional code needed to yield a complete executable program. this additional code includes library functions (like `printf`) that are used in the program
