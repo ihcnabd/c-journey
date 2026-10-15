@@ -71,3 +71,14 @@ here i'll write notes, thoughts, and any other information I pick up from *C Pro
     - a function that computes a value uses the `return` statement to specify what value it "returns"
     - the `main` function is mandatory, it's special, it gets called automatically when the program is executed
     - if there's no return statement at the end of the main function (e.g. our ch01/pun.c), the program will still terminate, however, many compilers will produce a warning message (because the function was supposed to return an integer but failed to)
+- statements: 
+    - is a command to be executed when the program runs
+    - C requires that each statement end with a semicolon, it shows the compiler where the statement ends, directives on the other hand, are normally one line long, and they don't end with a semicolon
+    - "\n" is the new-line character
+    - /* this is 
+    a multi-line 
+    commeeeeennnntttt */
+- variables is the way to store data temporarily during program execution 
+- every variable must have a type, which specifies what kind of data it will hold, two of these types are: int and float
+- arithmetic on float numbers may be slower than arithmetic on int 
+- the value of a float variable is often just an approximation of the number that was stored in it. if we store 0.1 in a float variable, we may later find that the variable has a value such as 0.99999999987, thanks to rounding error
