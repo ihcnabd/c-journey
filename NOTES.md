@@ -82,3 +82,30 @@ here i'll write notes, thoughts, and any other information I pick up from *C Pro
 - every variable must have a type, which specifies what kind of data it will hold, two of these types are: int and float
 - arithmetic on float numbers may be slower than arithmetic on int 
 - the value of a float variable is often just an approximation of the number that was stored in it. if we store 0.1 in a float variable, we may later find that the variable has a value such as 0.99999999987, thanks to rounding error
+- declarations: 
+    - vars must be declared (described for the benefit of the compiler) before they can be used
+    - to declare a var:
+        1. specify the type of it
+        2. then its name
+        examples: 
+            `int height;`
+            `float profit;`
+            `int height, length, width, volume;`
+            `float profit, loss;`
+    - our program with declarations: 
+        `int main(void)`
+        `{`
+            `declarations`
+            `statements`
+        `}`
+    - it's good to have a blank line between the declarations and the stetements
+- assignment: 
+    - a variable can be given a value by means of assignment, we declare first then we assign
+    - `profit = 2150.45f`
+    - `int height;`
+      `height = 8;`
+    BUT NOT: 
+      `height = 8;`
+      `int height;`
+    - mixing types (such as assigning an int value to a float variabl or assigning a float value to an int variable) is possible but not always safe
+- to print the value of a variable, we use %d for int and %f for float, as placeholders when it'll be filled with the variable value
