@@ -1,4 +1,8 @@
-*.o
-*.out
-build/
 *.exe
+*.out
+
+*.o
+*.obj
+
+*.pdb
+build/
